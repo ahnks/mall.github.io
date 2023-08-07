@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;800&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script lang="java">
+        $(function(){
+            $(".notice").slick({
+                vertical:true,
+                autoplay:true,
+                autoplaySpeed:3000,
+                dots:false,
+                arrows:true,
+            })
+
+            $(".best_item_list").slick({
+                slidesToShow:3,
+                slidesToScroll:1,
+                autoplay:true,
+                autoplaySpeed:3000,
+                dots:false,
+                arrows:true,
+            })
+        })
+    </script>
+    <title>FASHIONMALL</title>
+</head>
+
+<body>
+    <aside>
+        <div class="logo"><a href="#">
+                <h1>FashionMall</h1>
+            </a>
+        </div><!-- logo -->
+        <form action="" autocomplete="on">
+            <fieldset>
+                <legend>SIGN IN</legend>
+                <ul>
+                    <li>
+                        <label for="id">ID</label>
+                        <input type="text" size="10" name="id" placeholder="아이디">
+                    </li>
+                    <li>
+                        <label for="pw">PW</label>
+                        <input type="password" size="9" name="password" placeholder="비밀번호">
+                    </li>
+                </ul>
+                <a href="#">LOGIN</a>
+                <a href="#">SIGN UP</a><br>
+                <a href="#">FIND ID/PW</a>
+            </fieldset>
+        </form>
+
+        <nav class="items">
+            <ul class="main">
+                <li><a href="#">TOP</a>
+                    <ul class="sub">
+                        <li><a href="#">SHIRTS</a></li>
+                        <li><a href="#">BLOUSE</a></li>
+                        <li><a href="#">KNIT</a></li>
+                    </ul><!-- sub -->
+                </li>
+                <li><a href="#">BOTTOM</a>
+                    <ul class="sub">
+                        <li><a href="#">SKIRT</a></li>
+                        <li><a href="#">PANTS</a></li>
+                    </ul><!-- sub -->
+                </li>
+                <li><a href="#">OUTER</a>
+                    <ul class="sub">
+                        <li><a href="#">JACKET</a></li>
+                        <li><a href="#">COAT</a></li>
+                    </ul><!-- sub -->
+                </li>
+                <li><a href="#">ETC</a>
+                    <ul class="sub">
+                        <li><a href="#">ACC</a></li>
+                        <li><a href="#">BAG</a></li>
+                        <li><a href="#">SHOES</a></li>
+                        <li><a href="#">SOCKS</a></li>
+                    </ul><!-- sub -->
+                </li>
+            </ul><!-- main -->
+        </nav><!-- items -->
+
+    </aside>
+
+    <header>
+        <div class="notice_container">
+            <a href="#">NOTICE</a>
+            <ul class="notice">
+                <li><a href="#">여름 휴가 안내 (8/14~8/18)</a></li>
+                <li><a href="#">리뷰 이벤트 당첨자를 발표합니다.</a></li>
+                <li><a href="#">쇼핑몰을 오픈했습니다.</a></li>
+            </ul>
+        </div><!-- notice -->
+        <nav class="gnb">
+            <ul>
+                <li>🛒<input type="text" size="15" placeholder="SEARCH"></li>
+                <li><a href="#">Q&A</a></li>
+                <li><a href="#">CART</a></li>
+                <li><a href="#">MYPAGE</a></li>
+            </ul>
+        </nav><!-- gnb -->
+    </header>
+
+    <section>
+
+        <ul class="banner_list">
+            <li><a href="#"><img src="img/banner1.jpg" alt="배너1"></a></li>
+            <li><a href="#"><img src="img/banner2.jpg" alt="배너2"></a></li>
+            <li><a href="#"><img src="img/banner3.jpg" alt="배너3"></a></li>
+        </ul><!-- banner_list -->
+        <h2>BEST</h2>
+        <ul class="best_item_list">
+            <li><a href="#"><img src="img/best.jpg" alt="bestitem"></a>
+                <div class="item_info">
+                    <p><a href="#">ITEM NAME</p></a>
+                    <p>30,000 KRW</p>
+                </div><!-- item_info -->
+            </li>
+            <li><a href="#"><img src="img/best.jpg" alt="bestitem"></a>
+                <div class="item_info">
+                    <p><a href="#">ITEM NAME</p></a>
+                    <p>30,000 KRW</p>
+                </div><!-- item_info -->
+            </li>
+            <li><a href="#"><img src="img/best.jpg" alt="bestitem">
+                <div class="item_info">
+                    <p><a href="#">ITEM NAME</p></a>
+                    <p>30,000 KRW</p>
+                </div><!-- item_info -->
+            </li>
+            <li><a href="#"><img src="img/best.jpg" alt="bestitem">
+                <div class="item_info">
+                    <p><a href="#">ITEM NAME</p></a>
+                    <p>30,000 KRW</p>
+                </div><!-- item_info -->
+            </li>
+            <li><a href="#"><img src="img/best.jpg" alt="bestitem">
+                <div class="item_info">
+                    <p><a href="#">ITEM NAME</p></a>
+                    <p>30,000 KRW</p>
+                </div><!-- item_info -->
+            </li>
+        </ul><!-- best_item_list -->
+        <h2>NEW</h2>
+        <ul class="item_list">
+            <li>
+                <a href="#"><img src="img/item1.jpg" alt="item1"></a>
+                <div class="item_info">
+                    <p><a href="#">ITEM NAME</p></a>
+                    <p>99,000 KRW</p>
+                </div><!-- item_info -->
+            </li>
+            <li>
+                <a href="#"><img src="img/item2.jpg" alt="item2"></a>
+                <div class="item_info">
+                    <p><a href="#">ITEM NAME</p></a>
+                    <p>99,000 KRW</p>
+                </div><!-- item_info -->
+            </li>
+            <li>
+                <a href="#"><img src="img/item1.jpg" alt="item1"></a>
+                <div class="item_info">
+                    <p><a href="#">ITEM NAME</p></a>
+                    <p>99,000 KRW</p>
+                </div><!-- item_info -->
+            </li>
+            <li>
+                <a href="#"><img src="img/item2.jpg" alt="item2"></a>
+                <div class="item_info">
+                    <p><a href="#">ITEM NAME</p></a>
+                    <p>99,000 KRW</p>
+                </div><!-- item_info -->
+            </li>
+            <li>
+                <a href="#"><img src="img/item1.jpg" alt="item1"></a>
+                <div class="item_info">
+                    <p><a href="#">ITEM NAME</p></a>
+                    <p>99,000 KRW</p>
+                </div><!-- item_info -->
+            </li>
+            <li>
+                <a href="#"><img src="img/item2.jpg" alt="item2"></a>
+                <div class="item_info">
+                    <p><a href="#">ITEM NAME</p></a>
+                    <p>99,000 KRW</p>
+                </div><!-- item_info -->
+            </li>
+            <li>
+                <a href="#"><img src="img/item1.jpg" alt="item1"></a>
+                <div class="item_info">
+                    <p><a href="#">ITEM NAME</p></a>
+                    <p>99,000 KRW</p>
+                </div><!-- item_info -->
+            </li>
+            <li>
+                <a href="#"><img src="img/item2.jpg" alt="item2"></a>
+                <div class="item_info">
+                    <p><a href="#">ITEM NAME</p></a>
+                    <p>99,000 KRW</p>
+                </div><!-- item_info -->
+            </li>
+        </ul><!-- item_list -->
+        <h2>REVIEW</h2>
+        <ul class="review_list">
+            <li><a href="#"><img src="img/item1.jpg" alt="">
+                <p></p>    
+            </a>
+            </li>
+        </ul>
+    </section>
+    <footer>
+        <ul class="foot_gnb">
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">이용안내</a></li>
+        </ul>
+        <div class="foot_info">
+            <div><b>고객센터</b> 0000-0000</div>
+            <div><b>입금계좌</b> 000-00-000000</div>
+        </div>
+        <div class="foot_address">
+            <p><b>상호명</b> mall <b>대표자명</b> 안경선</p>
+            <p><b>주소</b> 경기도 남양주시 와부읍 덕소로 270</p>
+            <p><b>사업자등록번호</b> 000-00-00000</p>
+            <p>Copyright © <b>FASHIONMALL</b> all rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
