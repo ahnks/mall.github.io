@@ -164,25 +164,29 @@ section h2 {
     padding: 5vw 0 0 5vw;
 }
 
-.banner_list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
+.banner_list,
 .best_item_list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
-/* .best_item_list li{
-    margin: 0 10px;
-} */
+.best_item_list,
+.item_list {
+    gap: 2vw;
+    padding: 5vw;
+}
+
+.best_item_list{
+    padding: calc(5vw - 20px);
+}
+
+.best_item_list li{
+    margin: 0 20px;
+}
 
 .item_list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 2vw;
-    padding: 5vw;
-
 }
 
 .item_info {
