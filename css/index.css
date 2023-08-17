@@ -17,6 +17,7 @@ li {
 }
 
 body {
+    overflow-x: hidden;
     font-family: 'Nanum Myeongjo', serif;
 }
 
@@ -54,7 +55,7 @@ fieldset a:hover,
 aside,
 .notice_container>a,
 .gnb ul li {
-    color: rgb(12, 74, 12);
+    color: rgb(0, 51, 0);
 }
 
 /* 공통지정 끝 */
@@ -66,7 +67,6 @@ aside {
     position: fixed;
     width: 200px;
     height: 100vh;
-    background-color: rgb(248, 248, 231);
     padding: 20px;
 }
 
@@ -81,13 +81,12 @@ legend {
 }
 
 fieldset {
-    border: 1px solid rgb(12, 74, 12);
+    border: 1px solid rgb(0, 51, 0);
 }
 
 fieldset a {
     font-size: 12px;
 }
-
 
 .items {
     line-height: 1.5;
@@ -102,7 +101,6 @@ fieldset a {
     list-style: disc;
     list-style-position: inside;
 }
-
 
 
 /* 헤더 */
@@ -128,6 +126,7 @@ header {
     border: 1px solid;
     color: black;
 }
+
 /* 공지 슬릭 버튼 */
 .notice .slick-arrow {
     position: absolute;
@@ -147,6 +146,8 @@ header {
     background: url("/img/notice_down.png") no-repeat;
     bottom: 10px;
 }
+
+
 /* 헤더 오른쪽 메뉴 */
 .gnb ul li {
     float: left;
@@ -176,11 +177,12 @@ section h2 {
     padding: 5vw;
 }
 
-.best_item_list{
+.best_item_list {
     padding: calc(5vw - 20px);
+    /* border: 1px solid; */
 }
 
-.best_item_list li{
+.best_item_list li {
     margin: 0 20px;
 }
 
@@ -194,9 +196,39 @@ section h2 {
     line-height: 1.5;
 }
 
+.best_item_list .slick-arrow {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    text-indent: -9999px;
+    border: none;
+    background: url("/img/arrow.png") no-repeat;
+    z-index: 1;
+}
+
+.best_item_list .slick-arrow.slick-prev {
+    left: calc(5vw - 4px);
+}
+
+.best_item_list .slick-arrow.slick-next {
+    transform: rotate(180deg);
+    right: calc(5vw - 4px);
+}
+
+/* 컬러칩 */
+
+.chip {
+    width: 15px;
+    height: 15px;
+    border-radius: 7px;
+    display: inline-block;
+    margin-right: 3px;
+}
+
 /* 푸터 */
 footer {
-    background-color: rgb(12, 74, 12);
+    background-color: rgb(0, 51, 0);
     color: beige;
     font-size: 14px;
     padding: 3vw;
